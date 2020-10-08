@@ -1,0 +1,125 @@
+body {
+  background-color: #f8f8f8;
+  color: #1b1b1b;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  max-width: 768px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+#calendar {
+  background-color: #1b1b1b;
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 6px solid #1b1b1b;
+  border-radius: 8px;
+}
+
+.day {
+  display: inline-block;
+  color: white;
+  width: 14%;
+  text-align: center;
+  min-height: 100px;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  pointer: mouse;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.day h3 {
+  font-weight: 300;
+  font-size: 26px;
+  margin-top: calc(100px / 2 - 22px);
+}
+
+.selected {
+  border-bottom: 4px solid #40ff90;
+  border-top: 1px solid #40ff907e;
+  border-right: 1px solid #40ff9052;
+  border-left: 1px solid #40ff9052;
+  background-color: #40ff901f;
+}
+
+#addMeeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+input {
+  width: 100%;
+  min-height: 24px;
+  background-color: #1b1b1b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input[type="time"] {
+  cursor: pointer;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background-color: #00ff84;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[value="Save Meeting"] {
+  background-color: #00ff84;
+  color: #1b1b1b;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+input:focus {
+  background-color: white;
+  color: black;
+}
+
+input:focus::placeholder {
+  color: black;
+}
+
+#appointments {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+footer {
+  margin-top: 200px;
+  height: 10px;
+}
+
+#newMeetingDay {
+  transition: all ease 0.25s;
+  min-width: 20%;
+}

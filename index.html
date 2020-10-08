@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>October</h1>
+    <div id="calendar">
+      <!--Insert day cells here-->
+    </div>
+    <h2>Add Meeting</h2>
+    <div id="addMeeting">
+      <div>
+        <h4>Meeting Day</h4>
+        <span id="newMeetingDay">Click on a Day</span>
+      </div>
+      <div>
+        <h4>Meeting Time</h4>
+        <input type="time" id="newMeetingTime" />
+      </div>
+      <div>
+        <h4>Meeting Name</h4>
+        <input
+          type="text"
+          id="newMeetingName"
+          placeholder="Insert a name for the meeting"
+        />
+      </div>
+      <div>
+        <h4>Add</h4>
+        <input type="button" value="Save Meeting" onclick="saveMeeting()" />
+      </div>
+    </div>
+    <div id="appointments">
+      <h2>Appointments</h2>
+      <ul id="appointmentsList">
+        <!--Inset appointments here-->
+      </ul>
+    </div>
+    <footer></footer>
+  </body>
+</html>
